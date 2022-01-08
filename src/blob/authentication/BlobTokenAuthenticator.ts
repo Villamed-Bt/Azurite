@@ -71,12 +71,12 @@ export default class BlobTokenAuthenticator implements IAuthenticator {
       throw StorageErrorFactory.getInvalidAuthenticationInfo(context.contextId);
     }
 
-    if (req.getProtocol().toLowerCase() !== HTTPS) {
-      throw StorageErrorFactory.getAuthenticationFailed(
-        context.contextId,
-        "Authentication scheme Bearer is not allowed with HTTP."
-      );
-    }
+//     if (req.getProtocol().toLowerCase() !== HTTPS) {
+//       throw StorageErrorFactory.getAuthenticationFailed(
+//         context.contextId,
+//         "Authentication scheme Bearer is not allowed with HTTP."
+//       );
+//     }
 
     // TODO: Check API Version and enable bearer challenge after 2019-12-12
 
